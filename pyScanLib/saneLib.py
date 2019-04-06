@@ -78,20 +78,20 @@ class saneLib(object):
         # http://www.sane-project.org/html/doc014.html#f5
         # (left, top, right, bottom)
         # top left x axis          left
-        self.scanner.tl_x = float(inchTomm(left))
+        self.scanner.tl_x = float(self.inchTomm(left))
         # top left y axis           top
-        self.scanner.tl_y = float(inchTomm(top))
+        self.scanner.tl_y = float(self.inchTomm(top))
         # bottom left x axis      width
-        self.scanner.br_x = float(inchTomm(width))
+        self.scanner.br_x = float(self.inchTomm(width))
         # bottom left y axis     height
-        self.scanner.br_y = float(inchTomm(height))
+        self.scanner.br_y = float(self.inchTomm(height))
 
     def getScannerSize(self):
         """
         Return Scanner Layout as Tuple (left, top, right, bottom) in Inches      
         """
 
-        return (mmToInch(self.scanner.tl_x), mmToInch(self.scanner.tl_y), mmToInch(self.scanner.br_x), mmToInch(self.scanner.br_y))
+        return (self.mmToInch(self.scanner.tl_x), self.mmToInch(self.scanner.tl_y), self.mmToInch(self.scanner.br_x), self.mmToInch(self.scanner.br_y))
 
 
 
