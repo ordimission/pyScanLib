@@ -60,7 +60,7 @@ class saneLib(object):
         self.dpi = dpi
         self.scanner.resolution = self.dpi
 
- def setScanArea(self, left=0.0, top=0.0, width=8.267, height=11.693):
+    def setScanArea(self, left=0.0, top=0.0, width=8.267, height=11.693):
         """
         Set Custom scanner layout to selected scanner in Inches
         Arguments:
