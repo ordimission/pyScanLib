@@ -1,4 +1,5 @@
 import sane
+
 #======================================================================
 #	Name:	    saneLib
 #   Location:   https://github.com/soachishti/pyScanLib
