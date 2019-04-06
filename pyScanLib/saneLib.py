@@ -1,5 +1,5 @@
 import sane
-
+import unitConverter
 #======================================================================
 #	Name:	    saneLib
 #   Location:   https://github.com/soachishti/pyScanLib
