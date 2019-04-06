@@ -1,12 +1,11 @@
 import sane
-import unitConverter
 #======================================================================
 #	Name:	    saneLib
 #   Location:   https://github.com/soachishti/pyScanLib
 #	License:    BSD 2-Clause License
 #======================================================================
 
-class saneLib(unitConverter):
+class saneLib(object):
 
     """The is main class of SANE API (Linux)
     """
