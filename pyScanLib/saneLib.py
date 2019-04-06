@@ -21,7 +21,7 @@ class saneLib(object):
         Get available scanner from sane module
         """
         sane.init()
-        devices = sane.get_devices()[0]
+        devices = sane.get_devices()
         if len(devices) > 0:
             return devices
         else:
