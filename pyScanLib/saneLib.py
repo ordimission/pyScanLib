@@ -21,11 +21,23 @@ class saneLib(object):
         Get available scanner from sane module
         """
         sane.init()
+        devices = sane.get_devices()(0)
+        if len(devices) > 0:
+            return devices
+        else:
+            return None
+        
+    def getAllScanners(self):
+        """
+        Get all available scanners from sane module
+        """
+        sane.init()
         devices = sane.get_devices()
         if len(devices) > 0:
             return devices
         else:
             return None
+
 
     def setScanner(self, scannerName):
         """
