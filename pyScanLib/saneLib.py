@@ -16,18 +16,9 @@ class saneLib(object):
         self.layout = False
         self.scanner = None
 
-    def getScanners(self):
-        """
-        Get available scanner from sane module
-        """
-        sane.init()
-        devices = sane.get_devices()[0]
-        if len(devices) > 0:
-            return devices
-        else:
-            return None
+ 
         
-    def getAllScanners(self):
+    def getScanners(self):
         """
         Get all available scanners from sane module
         """
